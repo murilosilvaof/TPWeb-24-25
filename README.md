@@ -69,12 +69,12 @@ Repositório do trabalho prático da disciplina de Tecnologias Web (2024/2025). 
 | **Data**         | **Atividade**                                                                                     | **Responsável**    |
 |-------------------|---------------------------------------------------------------------------------------------------|--------------------|
 | **20/12 (Hoje)** | Analisar o tema e organizar o trabalho. Definir seções principais do HTML.                         | Ambos              |
-| **21/12**        | Criar a estrutura básica do HTML. Implementar cabeçalho, Hero Section e formulário de busca.       | Pessoa A           |
-| **22/12**        | Criar layout de promoções e rodapé. Adicionar estilos básicos no CSS.                              | Pessoa A           |
-| **23/12**        | Tornar o layout responsivo com media queries. Implementar o menu "sandwich".                       | Pessoa A           |
-| **24/12**        | Começar a lógica do formulário em JavaScript. Implementar captura de dados e geração dinâmica.     | Pessoa B           |
-| **25/12**        | Continuar lógica: cálculo de horários e estados dos voos. Validar campos do formulário.            | Pessoa B           |
-| **26/12**        | Exibir resultados dinamicamente na página. Ajustar integração com o layout.                        | Pessoa B           |
+| **21/12**        | Criar a estrutura básica do HTML. Implementar cabeçalho, Hero Section e formulário de busca.       | Renato          |
+| **22/12**        | Criar layout de promoções e rodapé. Adicionar estilos básicos no CSS.                              | Renato          |
+| **23/12**        | Tornar o layout responsivo com media queries. Implementar o menu "sandwich".                       | Renato          |
+| **24/12**        | Começar a lógica do formulário em JavaScript. Implementar captura de dados e geração dinâmica.     | Murilo          |
+| **25/12**        | Continuar lógica: cálculo de horários e estados dos voos. Validar campos do formulário.            | Murilo          |
+| **26/12**        | Exibir resultados dinamicamente na página. Ajustar integração com o layout.                        | Murilo          |
 | **27/12**        | Testar responsividade e funcionalidade do site. Corrigir bugs encontrados.                         | Ambos              |
 | **28/12**        | Revisar código (HTML, CSS, JS). Ajustar estilos e validar funcionalidades.                         | Ambos              |
 | **29/12**        | Finalizar, comprimir o projeto (.zip) e realizar a entrega no Moodle.                              | Ambos              |
