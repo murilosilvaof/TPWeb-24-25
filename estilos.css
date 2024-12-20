@@ -1,0 +1,78 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+header .logo img {
+  max-height: 50px;
+}
+
+header .menu {
+  display: flex;
+  gap: 20px;
+}
+
+header .menu li {
+  list-style: none;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-busca {
+  padding: 20px;
+  background: #f7f7f7;
+  margin-top: -20px;
+}
+
+.form-busca form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: white;
+}
