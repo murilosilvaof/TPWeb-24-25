@@ -48,14 +48,14 @@ Repositório do trabalho prático da disciplina de Tecnologias Web (2024/2025). 
 
 ## **LISTA DE TAREFAS**
 
-### **Tarefas para Pessoa A (HTML/CSS)**
+### **Tarefas para Renato (HTML/CSS)**
 1. Criar a estrutura HTML inicial.
 2. Implementar o layout das seções.
 3. Adicionar estilos CSS, usando Flexbox e Grid.
 4. Garantir responsividade e criar o menu "sandwich".
 5. Revisar e ajustar a interface com base no feedback.
 
-### **Tarefas para Pessoa B (JavaScript)**
+### **Tarefas para Murilo (JavaScript)**
 1. Criar a lógica do formulário de busca.
 2. Implementar a geração dinâmica de dados (número, horário e estado do voo).
 3. Validar os campos do formulário.
