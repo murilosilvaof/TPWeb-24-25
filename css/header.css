@@ -1,0 +1,123 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 75%;
+    background-color: white;
+    border-radius: 40px;
+    position: sticky;
+    top: 20px;
+    z-index: 3;
+
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+  }
+
+  header img {
+    max-height: 40px;
+    max-width: 160px;
+  }
+  
+  nav .menu {
+    display: flex;
+    gap: 20px; 
+
+  }
+  
+  header .menu li {
+    list-style: none;
+  }
+  
+  header .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .others{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+
+  }
+
+  .others div{
+    background-color: whitesmoke;
+    padding: 8px 13px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .others div:hover{
+    background-color: rgb(235, 233, 233);
+    transition: 0.7s;
+  }
+
+  .language{
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .language img{
+    max-height: 30px;
+    max-width: 23px;
+  }
+  .options{
+    display: none;
+  }
+
+  .navbar_opt{
+    display:none;
+  }
+
+
+  /*=============================Responsividade===========================*/
+  @media screen and (max-width: 1340px){
+    header{
+        max-width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 1239px){
+    header{
+        max-width: 80%;
+        padding: 6px;
+    }
+    .language{
+        display: none;
+    }
+
+    .options{
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 1130px){
+    header{
+        max-width: 90%;
+        padding: 6px;
+    }
+  }
+
+  @media screen and (max-width: 1023px){
+    nav .menu{
+        display: none;
+    }
+  }
+
+   @media screen and (max-width: 983px){
+    header img {
+        max-height: 40px;
+        max-width: 140px;
+      }
+  }
+  
