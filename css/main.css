@@ -1,0 +1,104 @@
+
+/*================Estilização da área "Planeie a sua viagem ao detalhe"=================*/
+.Planeie_sua_viagem{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Planeie_sua_viagem h1{
+    margin: auto;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Planeie_sua_viagem_imgs{
+    display: flex;
+    justify-content: space-between;
+}
+.Planeie_sua_viagem_imgs img{
+    max-width: 100%;
+    margin-top: 6px;
+}
+.Planeie_sua_viagem_imgs div{
+    flex: 1 1 100px;
+    margin: 10px;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.Planeie_sua_viagem_imgs div:hover img{
+    scale: 1.04;
+    transition: 0.4s;
+  }
+
+  .Planeie_sua_viagem_imgs p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .Planeie_sua_viagem_imgs p a{
+    text-decoration: none;
+    color: gray;
+  }
+
+  .Planeie_sua_viagem_imgs div:hover{
+    box-shadow: 0px 0px 10px
+    2px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
+
+
+/*================Estilização da área "Portugal Stopover com a TAP"=================*/
+
+.Portugal_Stopover_com_a_TAP{
+    margin-top: 90px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 70px;
+    padding-top:50px ;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Portugal_Stopover_com_a_TAP video{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%; 
+      z-index: -1;
+}
+
+.Portugal_Stopover_com_a_TAP #info_stopover{
+    color: white;
+    font-size: larger;
+}
+
+.Portugal_Stopover_com_a_TAP #Saber_mais_stopover{
+    background-color: whitesmoke;
+    max-width: 150px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.Portugal_Stopover_com_a_TAP #Saber_mais_stopover a{
+    text-decoration: none;
+    color: gray;
+}
+
+.Portugal_Stopover_com_a_TAP #Saber_mais_stopover:hover{
+    background-color: rgb(235, 233, 233);
+    transition: 0.7s;
+}
