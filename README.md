@@ -24,12 +24,12 @@ Repositório do trabalho prático da disciplina de Tecnologias Web (2024/2025). 
 
 ### **Parte 2: Funcionalidades em JavaScript**
 1. **Formulário de Busca de Voos**
-   - [ ] Capturar os dados do formulário (tipo de voo, data, cidade de partida e chegada).
-   - [ ] Gerar dinamicamente o número do voo (TP1, TP2).
-   - [ ] Calcular o horário dos voos e o estado:
-     - [ ] Tipo de voo (ida/regresso).
-     - [ ] Estado baseado na lógica (dia par/ímpar e mês par/ímpar).
-   - [ ] Exibir os resultados dinamicamente na página.
+   - [x] Capturar os dados do formulário (tipo de voo, data, cidade de partida e chegada).
+   - [x] Gerar dinamicamente o número do voo (TP1, TP2).
+   - [x] Calcular o horário dos voos e o estado:
+     - [x] Tipo de voo (ida/regresso).
+     - [x] Estado baseado na lógica (dia par/ímpar e mês par/ímpar).
+   - [x] Exibir os resultados dinamicamente na página.
 
 2. **Interatividade**
    - [ ] Validar campos do formulário (ex.: campos obrigatórios).
