@@ -1,4 +1,41 @@
+/*================Estilização da área Seção de butões=================*/
+.btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
 
+.btns a {
+    text-decoration: none;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.btns a div{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px;
+    color: #555;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btns a div p{
+    text-align: center;
+    margin-top: 4px;
+    padding-bottom: 0;
+    font-weight: 600;
+}
+.btns a div div{
+    background-color: whitesmoke;
+    margin-top: 0;
+}
 /*================Estilização da área "Planeie a sua viagem ao detalhe"=================*/
 .Planeie_sua_viagem{
     margin-top: 60px;
