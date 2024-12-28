@@ -1,0 +1,74 @@
+.form-busca {
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+
+  .form-busca form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-busca form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .form-busca form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .form-busca form input[type="text"],
+  .form-busca form input[type="date"],
+  .form-busca form input[type="radio"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-busca form input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .form-busca form button {
+    background-color: #65c922;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .form-busca form button:hover {
+    background-color: #57a81c;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 972px) {
+    .form-busca form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .form-busca form div {
+      width: 100%;
+    }
+  
+    .form-busca form button {
+      align-self: center;
+      width: 100%;
+    }
+  }
+  
