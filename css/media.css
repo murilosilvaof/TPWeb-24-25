@@ -1,35 +1,65 @@
 /*=============================Responsividade===========================*/
-@media screen and (max-width: 1340px){
-    body{
-        max-width: 90%;
-    }
+@media screen and (max-width: 1340px) {
+  body {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1239px) {
+  .language {
+    display: none;
   }
 
-  @media screen and (max-width: 1239px){
-    .language{
-        display: none;
-    }
+  .options {
+    display: block;
+  }
+}
 
-    .options{
-        display: block;
-    }
+@media screen and (max-width: 1130px) {
+  body {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  nav .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 983px) {
+  header img {
+    max-height: 40px;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 300px;
+    /* Reduz a altura para telas menores */
   }
 
-  @media screen and (max-width: 1130px){
-    body{
-        max-width: 90%;
-    }
+  .slides img {
+    object-fit: contain;
+    /* Ajusta para que as imagens sejam completamente visíveis */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 300px;
   }
 
-  @media screen and (max-width: 1023px){
-    nav .menu{
-        display: none;
-    }
+  .hero .overlay {
+    padding: 10px;
   }
 
-   @media screen and (max-width: 983px){
-    header img {
-        max-height: 40px;
-        max-width: 140px;
-      }
+  .hero h1 {
+    font-size: 1.8rem;
   }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
