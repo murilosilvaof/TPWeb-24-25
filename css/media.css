@@ -63,3 +63,23 @@
     font-size: 1rem;
   }
 }
+
+
+
+ /* Responsividade do formulário */
+  @media (max-width: 972px) {
+    .form-busca form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .form-busca form div {
+      width: 100%;
+    }
+  
+    .form-busca form button {
+      align-self: center;
+      width: 100%;
+    }
+  }
+  
