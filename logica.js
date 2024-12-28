@@ -1,3 +1,21 @@
+// Alternar as imagens automaticamente do carrossel
+const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.slides img');
+let currentIndex = 0;
+
+function changeSlide() {
+  currentIndex++; // Avança para a próxima imagem
+  if (currentIndex >= images.length) {
+    currentIndex = 0; // Volta para a primeira imagem se passar do limite
+  }
+  const offset = -currentIndex * 100; // Calcula o deslocamento
+  slides.style.transform = `translateX(${offset}%)`;
+}
+
+// Altere as imagens automaticamente a cada 3 segundos
+setInterval(changeSlide, 3000);
+
+
 // Selecionando os elementos do formulário e da área de resultados
 const formulario = document.querySelector('.form-busca form');
 const resultadosDiv = document.getElementById('resultados-voo');
