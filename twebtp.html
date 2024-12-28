@@ -233,26 +233,28 @@
 
     <!-- Formulário de Busca -->
     <section class="form-busca">
-      <form>
-        <div>
-          <label for="ida-volta">Ida e volta</label>
-          <input type="radio" id="ida-volta" name="tipo-voo" checked>
-        </div>
-        <div>
-          <label for="partida">De</label>
-          <input type="text" id="partida" value="Lisboa, Portugal">
-        </div>
-        <div>
-          <label for="destino">Para</label>
-          <input type="text" id="destino" placeholder="Destino">
-        </div>
-        <div>
-          <label for="data">Quando</label>
-          <input type="date" id="data">
-        </div>
-        <button type="submit">Procurar</button>
-      </form>
-    </section>
+  <form>
+    <div>
+      <label for="ida-volta">
+        <input type="radio" id="ida-volta" name="tipo-voo" checked>
+        Ida e volta
+      </label>
+    </div>
+    <div>
+      <label for="partida">De</label>
+      <input type="text" id="partida" value="Lisboa, Portugal">
+    </div>
+    <div>
+      <label for="destino">Para</label>
+      <input type="text" id="destino" placeholder="Destino">
+    </div>
+    <div>
+      <label for="data">Quando</label>
+      <input type="date" id="data">
+    </div>
+    <button type="submit">Procurar</button>
+  </form>
+</section>
 
     <!--ambiente de teste de voo-->
     <div id="resultados-voo"></div>
