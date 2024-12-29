@@ -1,9 +1,63 @@
+/* Estilos gerais do menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item {
+    position: relative;
+    /* Necessário para posicionar o submenu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+/* Submenu escondido inicialmente */
+.submenu {
+    display: none;
+    /* Esconde o submenu */
+    position: absolute;
+    top: 100%;
+    /* Posiciona abaixo do item principal */
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.submenu li {
+    padding: 5px 20px;
+}
+
+.submenu a {
+    color: #555;
+}
+
+/* Mostrar submenu ao passar o mouse */
+.menu-item:hover .submenu {
+    display: block;
+    /* Mostra o submenu */
+}
+
+/* Estilização ao passar o mouse sobre os links */
+.submenu a:hover {
+    color: #25b963;
+    /* Muda a cor do texto ao passar o mouse */
+}
+
 /*================Estilização da área Seção de butões=================*/
 .btns {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-
+    padding-top: 0px;
+    margin: 0px;
 }
 
 .btns a {
@@ -17,7 +71,7 @@
 .btns a div {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 14px;
     padding: 10px;
     color: #555;
@@ -229,4 +283,8 @@
 
 .hero button:hover {
     background-color: #0056b3;
+}
+
+.open {
+    display: block;
 }

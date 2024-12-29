@@ -17,12 +17,125 @@
     <img src="assets/imagens/tap_air_logo.png" alt="TAP Air Portugal">
     <nav>
       <ul class="menu">
-        <li><a href="#">Planear Viagem</a></li>
-        <li><a href="#">Os meus voos</a></li>
-        <li><a href="#">Check-in</a></li>
-        <li><a href="#">TAP Miles&Go</a></li>
-        <li><a href="#">Ajuda</a></li>
+        <!-- Planear Viagem -->
+        <li class="menu-item">
+          <a href="#">Planear Viagem</a>
+          <div class="submenu">
+            <ul>
+              <li><strong>Reservas</strong></li>
+              <li><a href="#">Voos e Destinos TAP</a></li>
+              <li><a href="#">Tarifas TAP</a></li>
+              <li><a href="#">Promoções e Campanhas</a></li>
+              <li><a href="#">Avião e comboio</a></li>
+              <li><a href="#">Ponte Aérea</a></li>
+              <li><a href="#">Stopover</a></li>
+              <li><a href="#">Ver todos</a></li>
+            </ul>
+            <ul>
+              <li><strong>Informações de viagem</strong></li>
+              <li><a href="#">Bagagem</a></li>
+              <li><a href="#">Necessidades especiais</a></li>
+              <li><a href="#">Viajar com animais</a></li>
+              <li><a href="#">Bebés e crianças</a></li>
+              <li><a href="#">Grávidas</a></li>
+              <li><a href="#">Documentação</a></li>
+              <li><a href="#">Ver todos</a></li>
+            </ul>
+            <ul>
+              <li><strong>A bordo</strong></li>
+              <li><a href="#">Voar em Executiva</a></li>
+              <li><a href="#">Voar em Económica</a></li>
+              <li><a href="#">Refeições</a></li>
+              <li><a href="#">Entretenimento</a></li>
+              <li><a href="#">Wi-fi</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Os Meus Voos -->
+        <li class="menu-item">
+          <a href="#">Os meus voos</a>
+          <div class="submenu">
+            <ul>
+              <li><strong>Gerir reserva</strong></li>
+              <li><a href="#">Gestão da Reserva</a></li>
+              <li><a href="#">Extras e Upgrades</a></li>
+              <li><a href="#">Fatura online</a></li>
+              <li><a href="#">TAP Vouchers</a></li>
+            </ul>
+            <ul>
+              <li><strong>Extras</strong></li>
+              <li><a href="#">Alugar carro</a></li>
+              <li><a href="#">Seguro de viagem</a></li>
+              <li><a href="#">Alojamento</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Check-in -->
+        <li class="menu-item">
+          <a href="#">Check-in</a>
+          <div class="submenu">
+            <ul>
+              <li><strong>Voos para check-in</strong></li>
+              <li>
+                <p>Insira código de reserva ou nome do passageiro para gerir.</p>
+              </li>
+              <li><a href="#">Visualize todas as suas viagens</a></li>
+            </ul>
+            <ul>
+              <li><strong>Efetuar Check-in</strong></li>
+              <li><input type="text" placeholder="Código de reserva"></li>
+              <li><input type="text" placeholder="Último nome"></li>
+              <li><button>Encontrar reserva</button></li>
+            </ul>
+            <ul>
+              <li><strong>Informações de Check-in</strong></li>
+              <li><a href="#">Ver detalhes</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- TAP Miles&Go -->
+        <li class="menu-item">
+          <a href="#">TAP Miles&Go</a>
+          <div class="submenu">
+            <ul>
+              <li><strong>Programa TAP Miles&Go</strong></li>
+              <li><a href="#">Conhecer o Programa</a></li>
+              <li><a href="#">Acumular Milhas</a></li>
+              <li><a href="#">Utilizar Milhas</a></li>
+              <li><a href="#">Parceiros</a></li>
+              <li><a href="#">Cartões de Crédito TAP</a></li>
+              <li><a href="#">Club TAP Miles&Go</a></li>
+              <li><a href="#">Promoções e Ofertas</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Ajuda -->
+        <li class="menu-item">
+          <a href="#">Ajuda</a>
+          <div class="submenu">
+            <ul>
+              <li><strong>Central de ajuda</strong></li>
+              <li><a href="#">Perguntas frequentes</a></li>
+              <li><a href="#">Pedidos e Reclamações</a></li>
+              <li><a href="#">Contactos</a></li>
+            </ul>
+            <ul>
+              <li><strong>Informações úteis</strong></li>
+              <li><a href="#">Reembolsos</a></li>
+              <li><a href="#">Fatura online</a></li>
+              <li><a href="#">Bagagem perdida/danificada</a></li>
+              <li><a href="#">Voo atrasado/cancelado</a></li>
+            </ul>
+          </div>
+        </li>
       </ul>
+    </nav>
+
+
     </nav>
     <section class="others">
       <div class="search">
@@ -31,9 +144,12 @@
       <div class="login">
         <i class="fa-regular fa-user"></i>
       </div>
-      <div class="options"><i class="fa-solid fa-bars"></i></div>
-      <div class="language"><img src="/TPWeb-24-25-main/assets/imagens/portugal_5315625.png" alt=""> <span>PT</span>
-      </div>
+      <div class="options">
+        <button onclick="menushow()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="language"><img src="/TPWeb-24-25-main/assets/imagens/portugal_5315625.png" alt=""> <span>PT</span>
+        </div>
     </section>
     <section class="navbar_opt">
       <div class="Planear Viagem_opt"></div>
@@ -344,7 +460,7 @@
     <!--"Portugal Stopover com a TAP"-->
     <section class="Portugal_Stopover_com_a_TAP">
       <video autoplay loop muted playsinline>
-        <source src="/TPWeb-24-25-main/assets/video/videotap.mp4" type="video/mp4">
+        <source src="assets/video/videotap.mp4" type="video/mp4">
       </video>
       <div id="info_stopover">
         <h1>Portugal Stopover com a TAP</h1>

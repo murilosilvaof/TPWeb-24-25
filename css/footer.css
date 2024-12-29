@@ -1,91 +1,90 @@
-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
-#outros_recursos{
-        margin-top: 20px;
-        padding: 60px;
-        display: flex;
-        justify-content: space-between;
-        width: 75%;
-        gap: 50px;
-        background-color:rgb(238, 237, 237);
-        border-radius: 40px;
-    }
 
-    #outros_recursos a{
-        text-decoration: none;
-        color: #333;
-    }
+#outros_recursos {
+  margin-top: 20px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  gap: 50px;
+  background-color: rgb(238, 237, 237);
+  border-radius: 40px;
+}
 
-    #outros_recursos a:hover{
-        color: rgb(1, 119, 1);
-    }
+#outros_recursos a {
+  text-decoration: none;
+  color: #333;
+}
 
-    #outros_recursos ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    }
+#outros_recursos a:hover {
+  color: rgb(1, 119, 1);
+}
 
-    .li_title_list_or{
-        font-size: large;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
+#outros_recursos ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  #rodape {
+.li_title_list_or {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#rodape {
   padding: 20px;
   background: lightgray;
   color: black;
   border-radius: 40px
-  }
+}
 
-  #social_app{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:rgb(238, 237, 237);
-    padding: 80px;
-    width: 24%;
-    border-radius: 40px;
-    gap: 20px;
-  }
+#social_app {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(238, 237, 237);
+  padding: 80px;
+  width: 24%;
+  border-radius: 40px;
+  gap: 20px;
+}
 
-  #social_app #tap-logo{
-    height: min-content;
-    width: 200px;
-    margin-bottom: 30px;
-  }
+#social_app #tap-logo {
+  height: min-content;
+  width: 200px;
+  margin-bottom: 30px;
+}
 
-  #social_app div h2{
-    color: rgb(1, 119, 1);
-  }
+#social_app div h2 {
+  color: rgb(1, 119, 1);
+}
 
-  #social_app div{
-    display: flex;
-    gap: 30px;
-  }
+#social_app div {
+  display: flex;
+  gap: 30px;
+}
 
-  #social_app div a{
-    color: #333;
-  }
+#social_app div a {
+  color: #333;
+}
 
-  #social_app div a:hover{
-    color: rgb(1, 119, 1);
-  }
+#social_app div a:hover {
+  color: rgb(1, 119, 1);
+}
 
-  #APP img{
-    width: 130px;
-  }
-
-
+#APP img {
+  width: 130px;
+}

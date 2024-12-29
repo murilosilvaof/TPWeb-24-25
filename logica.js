@@ -82,3 +82,14 @@ formulario.addEventListener('submit', (e) => {
     ` : ""}
   `;
 });
+
+
+function menushow() {
+  let menuMobile = document.querySelector('.menu_sandwich');
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open');
+  }
+  else {
+    menuMobile.classList.add('open');
+  }
+}
