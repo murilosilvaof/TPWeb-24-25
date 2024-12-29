@@ -92,14 +92,6 @@
       <p> PT, Português</p>
     </div>
   </div>
-  <!-- carrossel de imagens no inicio do site-->
-  <div class="carousel">
-    <div class="slides">
-      <img src="assets/imagens/Flytap_POA1024x500.jpg" alt="Imagem Porto Alegre">
-      <img src="assets/imagens/NATAL2024_FlyTAP_BBMobile1024x500.jpg" alt="Imagem Natal">
-      <img src="assets/imagens/madrid.png" alt="Imagem Madrid">
-    </div>
-  </div>
 
 
   <!--Opções da barra de navegação-->
@@ -223,38 +215,44 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <div class="overlay">
+      <div class="carousel">
+        <div class="slides">
+          <img src="assets/imagens/Flytap_POA1024x500.jpg" alt="Imagem Porto Alegre">
+          <img src="assets/imagens/NATAL2024_FlyTAP_BBMobile1024x500.jpg" alt="Imagem Natal">
+          <img src="assets/imagens/madrid.png" alt="Imagem Madrid">
+        </div>
+      </div>
+      <div class="content">
         <h1>Descubra os novos menus da Classe Executiva</h1>
         <p>Os ingredientes locais são as nossas estrelas!</p>
         <button>Saiba Mais</button>
       </div>
     </section>
 
-
     <!-- Formulário de Busca -->
     <section class="form-busca">
-  <form>
-    <div>
-      <label for="ida-volta">
-        <input type="radio" id="ida-volta" name="tipo-voo" checked>
-        Ida e volta
-      </label>
-    </div>
-    <div>
-      <label for="partida">De</label>
-      <input type="text" id="partida" value="Lisboa, Portugal">
-    </div>
-    <div>
-      <label for="destino">Para</label>
-      <input type="text" id="destino" placeholder="Destino">
-    </div>
-    <div>
-      <label for="data">Quando</label>
-      <input type="date" id="data">
-    </div>
-    <button type="submit">Procurar</button>
-  </form>
-</section>
+      <form>
+        <div>
+          <label for="ida-volta">
+            <input type="radio" id="ida-volta" name="tipo-voo" checked>
+            Ida e volta
+          </label>
+        </div>
+        <div>
+          <label for="partida">Origem</label>
+          <input type="text" id="partida" value="Lisboa, Portugal">
+        </div>
+        <div>
+          <label for="destino">Destino</label>
+          <input type="text" id="destino" placeholder="Destino">
+        </div>
+        <div>
+          <label for="data">Datas</label>
+          <input type="date" id="data">
+        </div>
+        <button type="submit">Procurar</button>
+      </form>
+    </section>
 
     <!--ambiente de teste de voo-->
     <div id="resultados-voo"></div>

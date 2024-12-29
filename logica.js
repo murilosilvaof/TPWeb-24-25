@@ -12,8 +12,8 @@ function changeSlide() {
   slides.style.transform = `translateX(${offset}%)`;
 }
 
-// Altere as imagens automaticamente a cada 3 segundos
-setInterval(changeSlide, 3000);
+// Altere as imagens automaticamente a cada 5 segundos
+setInterval(changeSlide, 5000);
 
 
 // Selecionando os elementos do formulário e da área de resultados

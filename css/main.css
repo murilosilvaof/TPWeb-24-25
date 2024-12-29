@@ -166,44 +166,54 @@
 .hero {
     position: relative;
     height: 500px;
-    /* Altura da seção */
-    background-image: url("assets/imagens/NATAL2024_FlyTAP_BBMobile1024x500.jpg");
-    /* Caminho da imagem */
-    background-size: cover;
-    /* Faz a imagem cobrir toda a área */
-    background-position: center;
-    /* Centraliza a imagem */
+    /* Altura da seção hero */
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.slides {
     display: flex;
-    justify-content: center;
-    /* Centraliza o conteúdo horizontalmente */
-    align-items: center;
-    /* Centraliza o conteúdo verticalmente */
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     text-align: center;
     color: white;
+    background: rgba(0, 0, 0, 0.4);
+    /* Leve escurecimento para legibilidade */
     padding: 20px;
+    border-radius: 10px;
 }
-
-.hero .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    /* Adiciona um escurecimento no fundo */
-    padding: 20px;
-    border-radius: 8px;
-    /* Arredonda os cantos (opcional) */
-}
-
 
 .hero h1 {
     font-size: 2.5rem;
-    /* Tamanho do título */
     margin-bottom: 10px;
-    /* Espaço entre o título e o parágrafo */
 }
 
 .hero p {
     font-size: 1.2rem;
-    /* Tamanho do subtítulo */
     margin-bottom: 20px;
-    /* Espaço entre o subtítulo e o botão */
 }
 
 .hero button {
