@@ -1,15 +1,15 @@
-#seta{
+#seta {
     color: rgb(134, 218, 9);
 }
 
-.navbar_opt{
+.navbar_opt {
     display: flex;
     flex-direction: column;
     gap: 20px;
     display: none;
 }
 
-.navbar_opt div{
+.navbar_opt div {
     margin-top: 20px;
     padding: 27px;
     display: flex;
@@ -19,44 +19,45 @@
     border-radius: 25px;
 }
 
-#ver_todos{
+#ver_todos {
     color: #9B51E0;
     border-bottom: 1px solid #9B51E0;
     padding: 2px;
 }
 
-#ver_todos:hover{
+#ver_todos:hover {
     border-bottom: 2px solid #9B51E0;
     transition: 0.2s;
     color: rgb(1, 119, 1);
-    background-color:rgba(144, 226, 144, 0.116);
+    background-color: rgba(144, 226, 144, 0.116);
 }
-.navbar_opt div a{
+
+.navbar_opt div a {
     text-decoration: none;
     color: #333;
 }
 
-.navbar_opt div a:hover{
+.navbar_opt div a:hover {
     color: rgb(1, 119, 1);
 }
 
-.navbar_opt ul{
+.navbar_opt ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.title_list_opt{
+.title_list_opt {
     font-size: large;
     font-weight: 600;
 }
 
-.title_list_opt:hover{
+.title_list_opt:hover {
     color: rgb(1, 119, 1);
 }
 
-.navbar_opt .Os_meus_voos_opt{
+.navbar_opt .Os_meus_voos_opt {
     display: flex;
     gap: 100px;
 
@@ -69,20 +70,20 @@
   padding: 5px;
 
 }*/
-#Voos_para_Check-in{
+#Voos_para_Check-in {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: medium;
     margin-top: 0;
-    
+
 }
 
-#tit_voos_check-in{
+#tit_voos_check-in {
     font-size: large;
     font-weight: 600;
 }
 
-.navbar_opt .Check-in_opt a{
+.navbar_opt .Check-in_opt a {
     max-width: 58%;
 }
