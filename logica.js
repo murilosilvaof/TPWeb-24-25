@@ -82,3 +82,53 @@ formulario.addEventListener('submit', (e) => {
     ` : ""}
   `;
 });
+
+
+//Adiciona interatividade para abrir/fechar submenus do menu sandwich.
+document.querySelectorAll('.titulo_menu_sand').forEach(item => {
+  item.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const submenu = this.nextElementSibling;
+      if (submenu) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+      }
+  });
+});
+
+//Muda a cor do butão do menu sandwich ao clicar
+const botoes = document.querySelectorAll('.titulo_menu_sand');
+
+botoes.forEach((botao) => {
+  botao.addEventListener("click", function () {
+      // Alterna entre a cor original e a nova cor nova
+      if (botao.style.backgroundColor === "rgb(101, 201, 34)") {
+          botao.style.backgroundColor = "rgb(245, 245, 245)";
+      } else {
+          botao.style.backgroundColor = "#65C922"; 
+      }
+  });
+});
+
+
+function menushow() {
+  let menuMobile = document.querySelector('.menu_sandwich');
+  if (menuMobile.classList.contains('open')){
+    menuMobile.classList.remove('open');
+  }
+  else{
+    menuMobile.classList.add('open');
+  }
+}
+
+
+
+//Adiciona interatividade para abrir/fechar submenus do menu reponsivo do footer.
+document.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const submenu = this.nextElementSibling;
+      if (submenu) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+      }
+  });
+});

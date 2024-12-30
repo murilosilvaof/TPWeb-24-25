@@ -1,91 +1,223 @@
 footer{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: whitesmoke;
 }
 
 .footer{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
+
+
+
 #outros_recursos{
-        margin-top: 20px;
+      margin-top: 20px;
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      gap: 50px;
+      background-color:rgb(238, 237, 237);
+      border-radius: 40px;
+      color: #333;
+
+      
+  }
+
+
+  #outros_recursos a{
+      text-decoration: none;
+      color: #333;
+  }
+
+  #outros_recursos a:hover{
+      color: rgb(1, 119, 1);
+  }
+
+  #outros_recursos ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+
+  .li_title_list_or{
+      font-size: large;
+      font-weight: 600;
+      margin-bottom: 20px;
+  }
+
+
+
+  #outros_recursos_responsivo{
+    margin-top: 20px;
         padding: 60px;
         display: flex;
-        justify-content: space-between;
-        width: 75%;
+        flex-direction: column;
+        width: 100%;
         gap: 50px;
         background-color:rgb(238, 237, 237);
         border-radius: 40px;
-    }
-
-    #outros_recursos a{
-        text-decoration: none;
         color: #333;
-    }
+        display: none;
+  }
 
-    #outros_recursos a:hover{
-        color: rgb(1, 119, 1);
-    }
+  #outros_recursos_responsivo a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
 
-    #outros_recursos ul{
+  #outros_recursos_responsivo ul{
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
     }
 
-    .li_title_list_or{
-        font-size: large;
-        font-weight: 600;
-        margin-bottom: 20px;
+    #outros_recursos_responsivo ul button{
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      border: none;
+      cursor: pointer;
     }
 
-  #rodape {
-  padding: 20px;
-  background: lightgray;
-  color: black;
-  border-radius: 40px
+    #outros_recursos_responsivo ul button:hover{
+      color: rgb(1, 119, 1);
+      transition: 0.3s;
+    }
+
+    #outros_recursos_responsivo ul li
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    /*#outros_recursos_responsivo ul li a
+    {
+      margin-bottom: 5px;
+    }*/
+
+    #outros_recursos_responsivo ul li ul
+    {
+      display: none;
+    }
+
+#rodape {
+padding: 20px;
+background: lightgray;
+color: black;
+border-radius: 40px
+}
+
+#social_app{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgb(238, 237, 237);
+  padding: 80px;
+  width: 24%;
+  border-radius: 40px;
+  gap: 20px;
+}
+
+#social_app #tap-logo{
+  height: min-content;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+#social_app div h2{
+  color: rgb(1, 119, 1);
+}
+
+#social_app div{
+  display: flex;
+  gap: 30px;
+}
+
+#social_app div a{
+  color: #333;
+}
+
+#social_app div a:hover{
+  color: rgb(1, 119, 1);
+}
+
+#APP img{
+  width: 130px;
+}
+
+
+/* Layout Responsivo */
+@media (max-width: 1342px) {
+  footer {
+    align-items: center;
   }
 
-  #social_app{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
+  .footer {
     flex-direction: column;
     align-items: center;
-    background-color:rgb(238, 237, 237);
-    padding: 80px;
-    width: 24%;
-    border-radius: 40px;
     gap: 20px;
+    width: 90%;
   }
 
-  #social_app #tap-logo{
-    height: min-content;
-    width: 200px;
-    margin-bottom: 30px;
+  #outros_recursos {
+    display: none;
   }
 
-  #social_app div h2{
-    color: rgb(1, 119, 1);
+
+  #outros_recursos_responsivo{
+    display: block;
   }
 
-  #social_app div{
-    display: flex;
-    gap: 30px;
+  #social_app {
+    width: 100%;
+    padding: 20px;
   }
 
-  #social_app div a{
-    color: #333;
+  #social_app div {
+    flex-wrap: wrap; /* Ajuste para evitar quebra em ícones */
+    justify-content: center;
+    gap: 15px;
   }
 
-  #social_app div a:hover{
-    color: rgb(1, 119, 1);
+  #social_app div a {
+    font-size: 20px; /* Ajuste o tamanho do ícone para melhor proporção */
   }
 
-  #APP img{
-    width: 130px;
+  #APP img {
+    width: 100px; /* Reduzir o tamanho das imagens dos botões do app */
   }
+
+  #rodape {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px){
+  #outros_recursos_responsivo ul button{
+    font-size: 13px;
+    font-weight: 500;
+  }
+  #outros_recursos_responsivo ul li a
+    {
+      font-size: 11px;
+    }
+}
+
+
+
 
 
