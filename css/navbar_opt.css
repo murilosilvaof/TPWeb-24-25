@@ -63,13 +63,6 @@
 
 }
 
-/*.navbar_opt .Check-in_opt{
-  display: grid;
-  gap: 8px;
-  grid-template-columns: 2fr 1fr 1fr; /*fr -> fração do espaço da grid (2 frações(50%) para a primreira coluna e 1 fração(25%) paras cada uma das outras duas )
-  padding: 5px;
-
-}*/
 #Voos_para_Check-in {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,4 @@
 /*=============================Responsividade===========================*/
-/*@media screen and (max-width: 1340px) {
-  body {
-    max-width: 90%;
-  }
-}*/
 
 @media screen and (max-width: 1235px) {
   .language {
@@ -91,3 +86,75 @@
     width: 100%;
   }
 }
+
+
+
+/*Responsividade área "Planeie sau viagem"*/
+@media (max-width: 500px){
+  .Planeie_sua_viagem_imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    gap: 20px;
+
+}
+}
+
+/*Responsividade Sessão de butões*/
+@media (max-width: 1249px){
+  .btns{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+
+
+/*=============================Responsividade Header===========================*/
+
+
+@media screen and (max-width: 1239px) {
+  header {
+    padding: 6px;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .options {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  header {
+    max-width: 90%;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  nav .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 983px) {
+  header img {
+    max-height: 40px;
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .menu_sandwich {
+    border-radius: 40px !important;
+    right: auto;
+    margin-right: -20px;
+}
+}
+
+/*========================================================*/
