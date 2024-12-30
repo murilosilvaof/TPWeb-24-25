@@ -5,13 +5,17 @@
   }
 }*/
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1235px) {
   .language {
     display: none;
   }
 
   .options {
     display: block;
+  }
+
+  nav .menu {
+    display: none;
   }
 }
 

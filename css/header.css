@@ -86,15 +86,14 @@ header .menu a {
 
 
 /*=============================Responsividade===========================*/
-@media screen and (max-width: 1340px) {
+/*@media screen and (max-width: 1340px) {
   header {
     max-width: 90%;
   }
-}
+}*/
 
 @media screen and (max-width: 1239px) {
   header {
-    max-width: 80%;
     padding: 6px;
   }
 
@@ -125,4 +124,12 @@ header .menu a {
     max-height: 40px;
     max-width: 140px;
   }
+}
+
+@media screen and (max-width: 500px){
+  .menu_sandwich {
+    border-radius: 40px !important;
+    right: auto;
+    margin-right: -20px;
+}
 }

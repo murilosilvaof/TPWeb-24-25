@@ -109,45 +109,21 @@ botoes.forEach((botao) => {
   });
 });
 
-
-/*function menushow() {
-  let menuMobile = document.querySelector('.menu_sandwich');
-  if (menuMobile.classList.contains('open')){
-    menuMobile.classList.remove('open');
-  }
-  else{
-    menuMobile.classList.add('open');
-  }
-}*/
-
-/*document.getElementById("menu-sandwich-btn").addEventListener("click", function () {
-  const menu = document.getElementById("menu-sandwich");
-  menu.classList.toggle("active"); // Adiciona ou remove a classe "active"
-});*/
-
-/*// Seleciona o botão e o menu
-const menuButton = document.getElementById("menu-sandwich-btn");
-const menuSandwich = document.getElementById("menu-sandwich");
-
-// Adiciona o evento de clique ao botão
-menuButton.addEventListener("click", () => {
-  // Alterna a classe "active" no menu
-  menuSandwich.classList.toggle("active");
-});*/
+//Adiciona interatividade para abrir/fechar o do menu-sandwich quando se carrega no botão da barra de navegação.
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menu-sandwich-btn");
-  const menuSandwich = document.getElementById("menu-sandwich");
-
-  if (menuButton && menuSandwich) {
-    menuButton.addEventListener("click", () => {
+  const menuSandwich = document.getElementById("menu-sandwich");menuButton.addEventListener("click", () => {
       menuSandwich.classList.toggle("active");
-      console.log("Botão clicado! Classe 'active' foi alternada.");
-    });
+
+  const icon = menuButton.querySelector("i");
+  if (menuSandwich.classList.contains("active")) {
+    icon.classList.replace("fa-bars", "fa-times"); // Troca para o ícone "X"
   } else {
-    console.error("Não foi possível encontrar o botão ou o menu-sandwich.");
+    icon.classList.replace("fa-times", "fa-bars"); // Troca para o ícone "☰"
   }
-});
+  });
+   });
 
 //Adiciona interatividade para abrir/fechar submenus do menu reponsivo do footer.
 document.querySelectorAll('.menu-item').forEach(item => {
