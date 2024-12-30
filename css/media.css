@@ -68,6 +68,11 @@
   }
 }
 
+@media screen and (max-width: 709px) {
+  .Planeie_sua_viagem h1 {
+    font-size: 20px !important;
+  }
+}
 
 
 /* Responsividade do formulário */
