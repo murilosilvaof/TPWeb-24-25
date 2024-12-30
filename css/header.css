@@ -59,6 +59,7 @@ header .menu a {
   cursor: pointer;
 }
 
+
 .others div:hover {
   background-color: rgb(235, 233, 233);
   transition: 0.7s;

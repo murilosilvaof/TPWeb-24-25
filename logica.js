@@ -110,7 +110,7 @@ botoes.forEach((botao) => {
 });
 
 
-function menushow() {
+/*function menushow() {
   let menuMobile = document.querySelector('.menu_sandwich');
   if (menuMobile.classList.contains('open')){
     menuMobile.classList.remove('open');
@@ -118,9 +118,36 @@ function menushow() {
   else{
     menuMobile.classList.add('open');
   }
-}
+}*/
 
+/*document.getElementById("menu-sandwich-btn").addEventListener("click", function () {
+  const menu = document.getElementById("menu-sandwich");
+  menu.classList.toggle("active"); // Adiciona ou remove a classe "active"
+});*/
 
+/*// Seleciona o botão e o menu
+const menuButton = document.getElementById("menu-sandwich-btn");
+const menuSandwich = document.getElementById("menu-sandwich");
+
+// Adiciona o evento de clique ao botão
+menuButton.addEventListener("click", () => {
+  // Alterna a classe "active" no menu
+  menuSandwich.classList.toggle("active");
+});*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.getElementById("menu-sandwich-btn");
+  const menuSandwich = document.getElementById("menu-sandwich");
+
+  if (menuButton && menuSandwich) {
+    menuButton.addEventListener("click", () => {
+      menuSandwich.classList.toggle("active");
+      console.log("Botão clicado! Classe 'active' foi alternada.");
+    });
+  } else {
+    console.error("Não foi possível encontrar o botão ou o menu-sandwich.");
+  }
+});
 
 //Adiciona interatividade para abrir/fechar submenus do menu reponsivo do footer.
 document.querySelectorAll('.menu-item').forEach(item => {

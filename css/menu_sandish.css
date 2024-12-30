@@ -1,4 +1,4 @@
-.menu_sandwich{
+/*.menu_sandwich{
     width: 350px;
     max-height: 100vh;
     background-color: white;
@@ -7,8 +7,34 @@
     overflow: auto;
     padding: 30px;
     display: none;
+}*/
+
+
+.menu_sandwich {
+    width: 350px;
+    max-height: 100vh;
+    background-color: white;
+    border-radius: 40px 0 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    padding: 30px;
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Para garantir que o menu apareça sobre outros elementos */
+    top: 110px;
+    right: 40px;
+    z-index: 1000; /* Garante que o menu esteja sobreposto */
+    transition: transform 0.3s ease; /* Animação suave */
 }
 
+
+.menu_sandwich.active {
+    display: block; /* Mostra o menu quando a classe "active" é adicionada */
+}
+
+#menu-sandwich-btn {
+    border: none;
+    cursor: pointer;
+}
 
 .list_menu_sandwich{
     list-style: none;
