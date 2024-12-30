@@ -89,3 +89,55 @@ formulario.addEventListener('submit', (e) => {
     `;
   }
 });
+
+//Adiciona interatividade para abrir/fechar submenus do menu sandwich.
+document.querySelectorAll('.titulo_menu_sand').forEach(item => {
+  item.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
+
+//Muda a cor do butão do menu sandwich ao clicar
+const botoes = document.querySelectorAll('.titulo_menu_sand');
+
+botoes.forEach((botao) => {
+  botao.addEventListener("click", function () {
+    // Alterna entre a cor original e a nova cor nova
+    if (botao.style.backgroundColor === "rgb(101, 201, 34)") {
+      botao.style.backgroundColor = "rgb(245, 245, 245)";
+    } else {
+      botao.style.backgroundColor = "#65C922";
+    }
+  });
+});
+
+//Adiciona interatividade para abrir/fechar o do menu-sandwich quando se carrega no botão da barra de navegação.
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.getElementById("menu-sandwich-btn");
+  const menuSandwich = document.getElementById("menu-sandwich"); menuButton.addEventListener("click", () => {
+    menuSandwich.classList.toggle("active");
+
+    const icon = menuButton.querySelector("i");
+    if (menuSandwich.classList.contains("active")) {
+      icon.classList.replace("fa-bars", "fa-times"); // Troca para o ícone "X"
+    } else {
+      icon.classList.replace("fa-times", "fa-bars"); // Troca para o ícone "☰"
+    }
+  });
+});
+
+//Adiciona interatividade para abrir/fechar submenus do menu reponsivo do footer.
+document.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
