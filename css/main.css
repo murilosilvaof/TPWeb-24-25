@@ -1,4 +1,4 @@
-body{
+body {
     background-color: whitesmoke;
 }
 
@@ -210,7 +210,7 @@ body{
     border-radius: 20px;
 }
 
-.slides #slide{
+.slides #slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -235,6 +235,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -242,14 +243,33 @@ body{
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 100%;
+
 }
 
-.slides img {
+.slide {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
+    /* Cada slide ocupa 100% da largura do container */
+    position: relative;
+    display: none;
+    /* Escondido por padrão */
 }
+
+.slide.active {
+    display: block;
+    /* Mostra apenas o slide ativo */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 
 .hero .content {
     position: absolute;

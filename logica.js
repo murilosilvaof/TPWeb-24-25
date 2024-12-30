@@ -1,19 +1,27 @@
 // Alternar as imagens automaticamente do carrossel
-const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.slides img');
+const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
 
-function changeSlide() {
-  currentIndex++; // Avança para a próxima imagem
-  if (currentIndex >= images.length) {
-    currentIndex = 0; // Volta para a primeira imagem se passar do limite
-  }
-  const offset = -currentIndex * 100; // Calcula o deslocamento
-  slides.style.transform = `translateX(${offset}%)`;
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index); // Mostra o slide atual
+  });
 }
 
-// Altere as imagens automaticamente a cada 5 segundos
+function changeSlide() {
+  currentIndex++; // Avança para o próximo slide
+  if (currentIndex >= slides.length) {
+    currentIndex = 0; // Volta ao início se passar do último slide
+  }
+  showSlide(currentIndex);
+}
+
+// Inicializar o carrossel
+showSlide(currentIndex);
+
+// Alternar slides automaticamente a cada 5 segundos
 setInterval(changeSlide, 5000);
+
 
 
 // Selecionando os elementos do formulário e da área de resultados
@@ -87,11 +95,11 @@ formulario.addEventListener('submit', (e) => {
 //Adiciona interatividade para abrir/fechar submenus do menu sandwich.
 document.querySelectorAll('.titulo_menu_sand').forEach(item => {
   item.addEventListener('click', function () {
-      this.classList.toggle('active');
-      const submenu = this.nextElementSibling;
-      if (submenu) {
-          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-      }
+    this.classList.toggle('active');
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
   });
 });
 
@@ -100,12 +108,12 @@ const botoes = document.querySelectorAll('.titulo_menu_sand');
 
 botoes.forEach((botao) => {
   botao.addEventListener("click", function () {
-      // Alterna entre a cor original e a nova cor nova
-      if (botao.style.backgroundColor === "rgb(101, 201, 34)") {
-          botao.style.backgroundColor = "rgb(245, 245, 245)";
-      } else {
-          botao.style.backgroundColor = "#65C922"; 
-      }
+    // Alterna entre a cor original e a nova cor nova
+    if (botao.style.backgroundColor === "rgb(101, 201, 34)") {
+      botao.style.backgroundColor = "rgb(245, 245, 245)";
+    } else {
+      botao.style.backgroundColor = "#65C922";
+    }
   });
 });
 
@@ -113,25 +121,25 @@ botoes.forEach((botao) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menu-sandwich-btn");
-  const menuSandwich = document.getElementById("menu-sandwich");menuButton.addEventListener("click", () => {
-      menuSandwich.classList.toggle("active");
+  const menuSandwich = document.getElementById("menu-sandwich"); menuButton.addEventListener("click", () => {
+    menuSandwich.classList.toggle("active");
 
-  const icon = menuButton.querySelector("i");
-  if (menuSandwich.classList.contains("active")) {
-    icon.classList.replace("fa-bars", "fa-times"); // Troca para o ícone "X"
-  } else {
-    icon.classList.replace("fa-times", "fa-bars"); // Troca para o ícone "☰"
-  }
+    const icon = menuButton.querySelector("i");
+    if (menuSandwich.classList.contains("active")) {
+      icon.classList.replace("fa-bars", "fa-times"); // Troca para o ícone "X"
+    } else {
+      icon.classList.replace("fa-times", "fa-bars"); // Troca para o ícone "☰"
+    }
   });
-   });
+});
 
 //Adiciona interatividade para abrir/fechar submenus do menu reponsivo do footer.
 document.querySelectorAll('.menu-item').forEach(item => {
   item.addEventListener('click', function () {
-      this.classList.toggle('active');
-      const submenu = this.nextElementSibling;
-      if (submenu) {
-          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-      }
+    this.classList.toggle('active');
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
   });
 });
